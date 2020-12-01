@@ -9,10 +9,12 @@ TEST_INPUT = [
     1456
 ]
 
+
 def test_find_two_2020_entries():
     result = find_2020_entries(TEST_INPUT)
-    assert result == [1721, 299]
+    assert result == (1721, 299)
+
 
 def test_find_three_2020_entries():
     result = find_2020_entries(TEST_INPUT, 3)
-    assert result == [979, 366, 675]
+    assert result == (979, 366, 675)

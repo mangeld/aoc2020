@@ -7,7 +7,7 @@ from functools import reduce
 def find_2020_entries(entries: List[int], n_products=2) -> List[int]:
     for combination in combinations(entries, n_products):
         if sum(combination) == 2020:
-            return list(combination)
+            return combination
 
 
 if __name__ == '__main__':
