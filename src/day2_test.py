@@ -32,6 +32,7 @@ def test_parse_line():
 def test_indexed_invalid_password(password, policy):
     assert day2.is_valid_password(password, policy) == False
 
+
 def test_indexed_valid_password():
     assert day2.is_valid_password(
         'abcde',
